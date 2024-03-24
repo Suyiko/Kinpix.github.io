@@ -1,8 +1,399 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Cheat Sheet</title>
+    <title>HTML AND CSS</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>New</h1>
+    <header>
+      <nav class="main">
+        <ul>
+          <li><a href='#'>HOME</a></li>
+          <li><a href='#html'>HTML</a></li>
+          <li><a href='#css'>CSS</a></li>
+          <li><a href='#res1'>RESOURCES</a></li>
+          <li><a href='#contact'>CONTACT</a></li>
+        </ul>
+      </nav>
+      <section id="banner">
+        <h1>HTML AND CSS</h1>
+        <h3>Cheat Sheet</h3>
+      </section>
+    </header>
+    <article>
+      <h2 id="html">HTML (HyperText Markup Language)</h2>
+      <p>HTML is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript). <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">More</a></p>
+      <h3>Basic Structure</h3>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>HTML</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </code></pre>
+      </div>
+      </div>
+      <br>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>HTML</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          &lt;<span class="tagcss">p</span><span class="pscss">class</span>="name" <span class="pscss">id</span>="ncode" &gt; &lt;/html&gt;
+          <table>
+            <tbody>
+              <tr>
+                <th>p</th>
+                <td>Tag</td>
+              </tr>
+              <tr>
+                <th>class</th>
+                <td>Define the content group</td>
+              </tr>
+              <tr>
+                <th>id</th>
+                <td>Define unique content</td>
+              </tr>
+            </tbody>
+          </table>
+        </code></pre>
+      </div>
+      </div>
+      <h3>Table</h3>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>HTML</span>
+      </div>
+      <div class='code'>
+        <table>
+          <thead>
+            <tr>
+            <th>TAG</th>
+            <th>DETAILS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>&lt;table&gt;  &lt;/table&gt;</td>
+            <td>Define a box content as a table</td>
+            </tr>
+            <tr>
+            <td>&lt;thead&gt;  &lt;/thead&gt;</td>
+            <td>Header of the table</td>
+            </tr>
+            <tr>
+            <td>&lt;tbody&gt;  &lt;/tbody&gt;</td>
+            <td>Data of the table</td>
+            </tr>
+            <tr>
+            <td>&lt;tfoot&gt;  &lt;/tfoot&gt;</td>
+            <td>Footer of the table </td>
+            </tr>
+            <tr>
+            <td>&lt;tr&gt;  &lt;/tr&gt;</td>
+            <td>Row of the table</td>
+            </tr>
+            <tr>
+            <td>&lt;th&gt;  &lt;/th&gt;</td>
+            <td>Title of row on the table</td>
+            </tr>
+            <tr>
+            <td>&lt;td&gt;  &lt;/td&gt;</td>
+            <td>Content of row on the table</td>
+            </tr>
+            <tr>
+            <th colspan='2'>ATTRIBUTE</th>
+            </tr>
+            <tr>
+            <td>colspan=''</td>
+            <td>Defines the number of columns a table cell should span</td>
+            </tr>
+            <tr>
+            <td>rowspan=''</td>
+            <td>Defines the number of rows a cell should span</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      </div>
+      <br>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>HTML</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          <span class="comcss">&lt;! -- Table --&gt;</span>
+
+          &lt;table&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Box 1&lt;/th&gt;
+                &lt;th&gt;Box 2&lt;/th&gt;
+                &lt;th&gt;Box 3&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Value 1&lt;/td&gt;
+                &lt;td&gt;Value 2&lt;/td&gt;
+                &lt;td&gt;Value 3&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+
+          <span class="comcss">&lt;! -- Attribute --&gt;</span>
+
+          &lt;table&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th <span class="pscss">colspan='3'</span>&gt;colspan 3&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Value 1&lt;/th&gt;
+                &lt;td&gt;Value 2&lt;/td&gt;
+                &lt;td&gt;Value 3&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+
+          &lt;table&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;th <span class="pscss">rowspan='2'</span>&gt;rowspan 2&lt;/th&gt;
+                &lt;td&gt;Value 1&lt;/td&gt;
+                &lt;td&gt;Value 2&lt;/td&gt;
+                &lt;td&gt;Value 3&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Value 4&lt;/td&gt;
+                &lt;td&gt;Value 5&lt;/td&gt;
+                &lt;td&gt;Value 6&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        </code></pre>
+      </div>
+      </div>
+      <br>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>Out</span>
+      </div>
+      <div class='code-out'>
+          <h2 class='oh2'>Table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Box 1</th>
+                <th>Box 2</th>
+                <th>Box 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 3</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class='oh2'>Attribute</h2>
+          <table>
+            <thead>
+              <tr>
+                <th colspan='3'>colspan 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 3</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr>
+                <th rowspan='2'>rowspan 2</th>
+                <td>Value 1</td>
+                <td>Value 2</td>
+                <td>Value 3</td>
+              </tr>
+              <tr>
+                <td>Value 4</td>
+                <td>Value 5</td>
+                <td>Value 6</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <h2 id="css">CSS (Cascading Style Sheets)</h2>
+      <p>CSS is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">More</a></p>
+      <h3>Basic Structure</h3>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>CSS</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          <span class="comcss">/* Style tag */</span>
+
+          <span class="tagcss">p</span> {
+            color: white;
+          }
+
+          <span class="comcss">/* Style class */</span>
+
+          <span class="tagcss">.name</span> {
+            color: white;
+          }
+
+          <span class="comcss">/* Style id */</span>
+
+          <span class="tagcss">#ncode</span> {
+            color: white;
+          }
+
+          <span class="comcss">/* Style all (change default set)*/</span>
+
+          <span class="tagcss">*</span> {
+            color: white;
+          }
+
+          <span class="comcss">/* chain selector = parent and child reference */</span>
+
+          <span class="tagcss">p .name</span> {
+            color: white;
+          }
+
+          <span class="tagcss">p #ncode</span> {
+            color: white;
+          }
+
+          <span class="comcss">/* multiple selector = diferents selectors */</span>
+
+          <span class="tagcss">div, p</span> {
+            color: white;
+          }
+
+          <span class="tagcss">div, p, .class, #nemesis</span> {
+            color: white
+          }
+        </code></pre>
+      </div>
+      </div>
+      <br>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>CSS</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          <span class="comcss">/* Pseudo class */</span>
+
+            <span class="tagcss">tag</span> <span class="pscss">:focus</span>
+            <span class="tagcss">tag</span> <span class="pscss">:visited</span>
+            <span class="tagcss">tag</span> <span class="pscss">:disabled</span>
+            <span class="tagcss">tag</span> <span class="pscss">:active</span>
+            <span class="tagcss">tag</span> <span class="pscss">:hover</span>
+            <span class="tagcss">tag</span> <span class="pscss">:before</span>
+            <span class="tagcss">tag</span> <span class="pscss">:after</span>
+
+          <span class="comcss">/* Example */</span>
+
+            <span class="tagcss">.a</span> <span class="pscss">:hover</span>{
+                  color: red;
+              }
+        </code></pre>
+      </div>
+      </div>
+      <br>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>Out</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes'>More</a>
+        </code></pre>
+      </div>
+      </div>
+      <h3>Specificity</h3>
+      <p>Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element. The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">More</a></p>
+      <div class='box-code'>
+      <div class='tcode'>
+        <span>CSS</span>
+      </div>
+      <div class='code'>
+        <pre><code>
+          <span class="comcss">/* Specificity */</span>
+
+            <span class="tagcss">ID</span> &gt;&gt;&gt; <span class="pscss"> High</span> &gt;&gt; unique
+
+            <span class="tagcss">Class</span> &gt;&gt;&gt; <span class="pscss"> Mid</span>
+
+            <span class="tagcss">Tag</span> &gt;&gt;&gt; <span class="pscss"> Low</span>
+
+          <span class="comcss">/* Example */</span>
+            <br>
+            <span class="tagcss">&lt;h1 class="example" id="new"&gt;&lt;/h1&gt;</span>
+            <br>
+            h1 {
+              color: blue;
+            }
+
+            .example {
+              color: green;
+            }
+
+            #new {
+              color: red;   <span class="pscss">Winner</span>
+            }
+            
+          <span class="comcss">/* brake the rule */</span>
+
+            add <span class="pscss">!important</span> &gt;&gt;&gt; <span class="pscss"> Very High</span>
+
+            .example {
+              color: blue <span class="pscss">!important</span>;     <span class="pscss">Winner</span>
+            }
+
+            #new {
+              color: red;
+            }
+        </code></pre>
+        * Using !important to override specificity is considered a bad practice and should be avoided for this purpose. Understanding and effectively using specificity and the cascade can remove any need for the !important flag.
+      </div>
+      </div>
+      <h2 id="res1">RESOURCES</h2>
+          <h3>Code Documentation</h3>
+          <a href="https://developer.mozilla.org/en-US/"><img src='https://blog.mozilla.org/opendesign/files/2017/06/logo.png'></a>
+        <br>
+        <a href="https://developer.mozilla.org/es/play" class='a-button'>MDN PlayGround</a>
+        <br>
+        <a href="https://www.w3schools.com"><img src='https://www.rezourze.com/rz-storage/2023/01/W3Schools-JavaScript-Tutorial.jpg'></a>
+        <br>
+        <h3>Color palette's'</h3>
+        <a href="https://colorhunt.co"><img src='https://justtheskills.com/wp-content/uploads/2020/10/color-hunt.jpg'></a>
+    </article>
+    <footer id='contact'>
+      <h3>Made by Cesar Fierro</h3>
+    </footer>
   </body>
 </html>
