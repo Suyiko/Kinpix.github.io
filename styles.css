@@ -1,0 +1,201 @@
+/* Palettes Colors
+  #251f47
+  #404e7c
+  #71b48d
+  #86cb92
+  #0c1e2b	
+  #132e43	
+  #204864	
+  #f1f4f5	
+  #738793
+*/
+
+body {
+  background-color: #738793;
+  color: #0c1e2b;
+  font-family: 'Work Sans', 'Times New roman', 'serif' ;
+}
+/* header */
+header {
+  position: relative;
+  top: 10px;
+  display: grid;
+  height: 500px;
+  width: 100%;
+  min-width: 675px;
+  background-image: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmV8ZW58MHx8MHx8&w=3600&q=80');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: end;
+  align-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav {
+  background-color: white;
+  position: fixed;
+  right: 0px;
+  height: 40px;
+  width: 100%;
+  min-width: 535px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 0px;
+  text-align: center;
+  z-index: 1;
+}
+
+.main ul{
+  list-style:none ;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main li{
+  display: inline-block;
+  padding: 10px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.main li :hover{
+  color: #71b48d;
+}
+
+.main a {
+  text-decoration: none;
+  color: #0c1e2b;
+}
+
+#banner {
+  background-color: white;
+  opacity: 0.6;
+  width: 290px;
+  height: 230px;
+  padding: 10px;
+  margin-right: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+#banner h1 {
+  background: transparent;
+  font-size: 50px;
+  letter-spacing: 8px;
+  margin-bottom: 0px;
+}
+
+#banner h3 {
+  margin-top: 0px;
+  background: transparent;
+  font-family: 'Smooch Sans';
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 1.5px;
+}
+
+/* Content */
+
+article {
+  display: grid;
+}
+h2 {
+  padding-top: 40px;
+}
+.box-code { 
+  display: block;
+  background-color: #343434;
+  width: 600px;
+  border-radius: 5px;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+.tcode{
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  font-weight: bold;
+}
+.code {
+  margin: 5px;
+  color: white;
+}
+
+.code-out .oh2 {
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+}
+
+table {
+  margin: 10px auto;
+  color: white;
+}
+
+th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  color: white;
+}
+
+code, span, pre {
+  color:white;
+  margin: inherit;
+}
+.code a {
+  color: white;
+  font-weight: bold;
+}
+.code a:hover{
+  color: red;
+}
+.tagcss {
+  color: #738793;
+  font-weight: bold;
+}
+.pscss{
+  color: orange;
+}
+.comcss {
+  color: #71b48d;
+  width: inherit;
+}
+.example:hover {
+  color: blue;
+}
+#new {
+  text-align: center;
+  color: red;
+}
+img {
+  width: 200px;
+  height: auto;
+}
+a{
+  width: 100px;
+  height: auto;
+}
+.a-button {
+  text-decoration: none;
+  width: 200px;
+  height: 40px;
+  background-color: #222831;
+  color: #EEEEEE;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+}
+.a-button:hover {
+  background-color: #31363F;
+  font-size: 0.9em;
+}
+footer {
+  position: relative;
+  text-align: right;
+}
